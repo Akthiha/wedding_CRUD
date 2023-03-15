@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A & K wedding</title>
+    <style>
+        body {
+          background-image: url('/img/background.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+  
+        nav {
+          background-color: #333;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 50px;
+        }
+  
+        nav a {
+          color: #fff;
+          text-decoration: none;
+          padding: 10px;
+        }
+  
+        #map {
+          height: 400px;
+          width: 100%;
+        }
+  
+        footer {
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          padding: 20px;
+        }
+  
+        footer span {
+          font-size: 18px;
+        }
+      </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/services">Services</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+        <a href="/login">Login</a>
+        <a href="/signup">Sign Up</a>
+      </nav>
+      <div id="map"></div>
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+        async
+        defer
+      ></script>
+      <script>
+        function initMap() {
+          const ayanaResort = { lat: -8.797730, lng: 115.218131 };
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 16,
+            center: ayanaResort,
+          });
+          const marker = new google.maps.Marker({
+            position: ayanaResort,
+            map: map,
+          });
+        }
+      </script>
+      <footer>
+        <span>&copy; A & K wedding | All Rights Reserved | $$$&trade;</span>
+      </footer>
+</body>
+</html>
+
