@@ -3,11 +3,7 @@ const app = express();
 const ejs = require('ejs');
 const { Pool } = require('pg');
 const pool = new Pool({
-  user: 'your_postgres_user',
-  host: 'localhost',
-  database: 'rsvp',
-  password: 'your_postgres_password',
-  port: 5432,
+ database: 'rsvp',
 });
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }));
