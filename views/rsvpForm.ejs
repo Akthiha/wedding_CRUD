@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RSVP Form</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Welcome</a>
+        <a href="/menu">Menu</a>
+        <a href="/rsvpForm">Registry</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/guestinfo">Guest info</a>
+    </nav>
+	<h1>RSVP Form</h1>
+	<form method="POST" action="/rsvp">
+		<label for="name">Name:</label>
+		<input type="text" name="name" required><br><br>
+		<label for="email">Email:</label>
+		<input type="email" name="email" required><br><br>
+		<label for="attending">Are you attending?</label>
+		<input type="radio" name="attending" value="true" required> Yes
+		<input type="radio" name="attending" value="false" required> No<br><br>
+		<label for="guests">Number of guests:</label>
+		<input type="number" name="guests" min="1" max="10" required><br><br>
+		<label for="main_dish_choice">Main dish choice:</label>
+		<select name="main_dish_choice">
+			<option value="">Chicken</option>
+			<option value="fish">Fish</option>
+			<option value="vegetarian">Vegetarian</option>
+		</select><br><br>
+		<label for="table_number">Table number:</label>
+		<input type="number" name="table_number" min="1" max="20" required><br><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

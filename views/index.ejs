@@ -29,6 +29,10 @@
         #map {
           height: 400px;
           width: 100%;
+          background-image: url('/img/wedding_cartoon.jpg');
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
         }
   
         footer {
@@ -45,34 +49,14 @@
 </head>
 <body>
     <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/services">Services</a>
+        <a href="/">Welcome</a>
+        <a href="/menu">Menu</a>
+        <a href="/rsvpForm">Registry</a>
         <a href="/gallery">Gallery</a>
-        <a href="/blog">Blog</a>
-        <a href="/contact">Contact</a>
-        <a href="/login">Login</a>
-        <a href="/signup">Sign Up</a>
+        <a href="/guestinfo">Guest info</a>
       </nav>
       <div id="map"></div>
-      <script
-        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-        async
-        defer
-      ></script>
-      <script>
-        function initMap() {
-          const ayanaResort = { lat: -8.797730, lng: 115.218131 };
-          const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 16,
-            center: ayanaResort,
-          });
-          const marker = new google.maps.Marker({
-            position: ayanaResort,
-            map: map,
-          });
-        }
-      </script>
+      
       <footer>
         <span>&copy; A & K wedding | All Rights Reserved | $$$&trade;</span>
       </footer>
