@@ -2,6 +2,83 @@
 <html>
 <head>
 	<title>RSVP Form</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation bar */
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Style the page header */
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+/* Style the form labels */
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Style the form inputs */
+input,
+select {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #222;
+}
+
+/* Set specific styles for the form elements */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label:first-of-type {
+  margin-top: 0;
+}
+
+form label:last-of-type {
+  margin-bottom: 2rem;
+}
+    </style>
 </head>
 <body>
     <nav>
