@@ -54,7 +54,15 @@
         <a href="/rsvpForm">Registry</a>
         <a href="/gallery">Gallery</a>
         <a href="/guestinfo">Guest info</a>
-        <a href="/login">Login</a>
+        <% if (user) { %>
+            <!-- <form method="post" action="/logout">
+              <button type="submit">Logout</button>
+            </form> -->
+            <a href="/logout">Logout</a>
+          <% } else { %>
+            <a href="/login">Login</a>
+            <a href="/signup">Signup</a>
+          <% } %>
       </nav>
       <div id="map"></div>
       
