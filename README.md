@@ -14,14 +14,13 @@
 
 
 
-# hurdles
-1. how to restrict google map API key 
-2. DRY runs 
-3. unable to add upload picture functions yet (gallery is useless currently)
-4. don't have login function yet 
+# upcoming functions 
+1. add upload picture functions (gallery is not working currently)
+2. add admin login functions 
 
 
 
 # link 
 click [here](https://aandk-wedding.onrender.com)
 
+# framework
